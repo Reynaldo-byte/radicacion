@@ -1,0 +1,138 @@
+#contenido{
+	   width:90%;
+    height:90%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+     border-style: solid;
+      border-radius: 1rem ;
+      background-color: rgba(8, 209, 246,0.2);
+
+
+}
+p{
+	font-family: fantasy ;
+	font-size: 1.5rem;
+
+}
+#body{
+	background-image: url("imagenes/pensando.png");
+	
+	background-size: all;
+	
+	
+}
+
+body{
+	background-color: lightcoral;
+	
+}
+object{
+	width: 90%;
+    height: 90%;
+}
+.ejercicio{
+	padding: 10px;
+
+ 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+div{
+
+	position: absolute;
+	  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+
+}
+
+/* Ejercicio tipo 3 */
+#ejercicio3{
+	z-index:1;
+	top:0%;
+	
+	margin-left: 150px;
+	font-size:0.5rem;
+}
+#ejercicio3_2{
+	z-index: 2;
+	top: 29%;
+	left:48%;
+}
+#usuario3{
+	width: 50px;
+	height: 30px;
+	font-size: 1rem;
+}
+#ejercicio1{
+z-index: 2;
+	
+	left:48%;
+	font-size: 0.5rem;
+}
+#ejercicio1_2{
+	z-index: 2;
+	top: 29%;
+	left:48%;
+}
+#usuario1{
+	margin-left:150px ;
+	width: 50px;
+	height: 30px;
+	font-size: 1rem;
+}
+#ejercicio2{
+z-index: 1;
+	top: 0%;
+	left:50%;
+	font-size: 0.5rem;
+}
+#ejercicio2_2{
+	z-index: 2;
+	top: 0%;
+	margin-left:150px;
+	font-size: 0.5rem;
+}
+#ejercicio2_3{
+	z-index: 2;
+	top: 0%;
+	margin-left:300px;
+	font-size: 0.5rem;
+}
+#usuario2{
+	z-index: 2;
+	top: 0px;
+	left:80px ;
+	width: 25px;
+	height: 20px;
+	font-size:1rem;
+}
+
+            button{
+            	margin-left: 50%;
+                background-color: blueviolet;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                font-weight: bolder;
+                padding: 3px;
+                border: solid 2px black;
+            }
+            button:hover{ /* Estilo que se activa al pasar el puntero sobre el boton */
+                background-color: lightcoral;
+                font-size: 22px;
+                border: groove 4px red;
+            }
+
