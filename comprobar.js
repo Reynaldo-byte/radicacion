@@ -4,7 +4,7 @@ var raiz;
 var tipo;
 var usuario;
 var cantidad;
-	tipo=Math.floor((Math.random()*2));
+	
 	const audio = document.createElement("audio");
 	audio.preload = "auto";
 	audio.src = "sounds/142.mp3";
@@ -12,7 +12,7 @@ var cantidad;
 
 //escoge el tipo de ejercio
 function escoger_tipo() {
-
+tipo=Math.floor((Math.random()*3));
 	audio.play();
 		audio.loop = true;
 	
@@ -90,23 +90,30 @@ function comprobar_1(){
 	usuario=document.getElementById("usuario1").value
 	if(raiz==usuario){
 	
-			document.getElementById("body").setAttribute("style","background-image: url('../imagenes/correcto.png');");
-
+			document.getElementById("usuario1").setAttribute("style"," border-width: 3px;border-style: solid;border-color: green;");
+document.getElementById("mensaje").innerHTML="Correcto!!, puedes continuar";
+			document.getElementById("mensaje").setAttribute("style","color:green;")
+			
 	}
 	else{
-		document.getElementById("body").setAttribute("style","background-image: url('../imagenes/error.png');");
+document.getElementById("usuario1").setAttribute("style"," border-width: 3px;border-style: solid;border-color: red;");
+document.getElementById("mensaje").innerHTML="Incorrecto, prueba nuevamente";
+			document.getElementById("mensaje").setAttribute("style","color:red;")
 }}
 function comprobar_2() {
 	usuario=document.getElementById("usuario2").value
 
 	if(Math.pow(raiz,usuario)==radicando){
 			
-			document.getElementById("body").setAttribute("style","background-image: url('../imagenes/correcto.png');");
-
+			document.getElementById("usuario2").setAttribute("style"," border-width: 3px;border-style: solid;border-color: green;");
+document.getElementById("mensaje").innerHTML="Correcto!!, puedes continuar";
+			document.getElementById("mensaje").setAttribute("style","color:green;")
 	}
 	else{
 
-		document.getElementById("body").setAttribute("style","background-image: url('../imagenes/error.png');");
+		document.getElementById("usuario2").setAttribute("style"," border-width: 3px;border-style: solid;border-color: red;");
+		document.getElementById("mensaje").innerHTML="Incorrecto, prueba nuevamente";
+			document.getElementById("mensaje").setAttribute("style","color:red;")
 	}
 
 }
@@ -114,11 +121,14 @@ function comprobar_3() {
 	usuario=document.getElementById("usuario3").value
 	if(radicando==usuario){
 		
-			document.getElementById("body").setAttribute("style","background-image: url('../imagenes/correcto.png');");
-		
+			document.getElementById("usuario3").setAttribute("style"," border-width: 3px;border-style: solid;border-color: green;");
+		document.getElementById("mensaje").innerHTML="Correcto!!, puedes continuar";
+			document.getElementById("mensaje").setAttribute("style","color:green;")
 	}
 	else{
-			document.getElementById("body").setAttribute("style","background-image: url('/..imagenes/error.png');");
+			document.getElementById("usuario3").setAttribute("style"," border-width: 3px;border-style: solid;border-color: red;");
+			document.getElementById("mensaje").innerHTML="Incorrecto, prueba nuevamente";
+			document.getElementById("mensaje").setAttribute("style","color:red;")
 	}
 	
 }
