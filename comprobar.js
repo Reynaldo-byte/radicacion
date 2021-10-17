@@ -91,7 +91,7 @@ function comprobar_1(){
 	if(raiz==usuario){
 	
 			document.getElementById("usuario1").setAttribute("style"," border-width: 3px;border-style: solid;border-color: green;");
-document.getElementById("mensaje").innerHTML="Correcto!!, puedes continuar";
+document.getElementById("mensaje").innerHTML="¡Correcto! Puedes continuar";
 			document.getElementById("mensaje").setAttribute("style","color:green;")
 			
 	}
@@ -106,7 +106,7 @@ function comprobar_2() {
 	if(Math.pow(raiz,usuario)==radicando){
 			
 			document.getElementById("usuario2").setAttribute("style"," border-width: 3px;border-style: solid;border-color: green;");
-document.getElementById("mensaje").innerHTML="Correcto!!, puedes continuar";
+document.getElementById("mensaje").innerHTML="¡Correcto! Puedes continuar";
 			document.getElementById("mensaje").setAttribute("style","color:green;")
 	}
 	else{
@@ -122,7 +122,7 @@ function comprobar_3() {
 	if(radicando==usuario){
 		
 			document.getElementById("usuario3").setAttribute("style"," border-width: 3px;border-style: solid;border-color: green;");
-		document.getElementById("mensaje").innerHTML="Correcto!!, puedes continuar";
+		document.getElementById("mensaje").innerHTML="¡Correcto! Puedes continuar";
 			document.getElementById("mensaje").setAttribute("style","color:green;")
 	}
 	else{
